@@ -1,3 +1,8 @@
+# Beginner Friendly Practice Project learnt from [Dipesh Malvia](https://bit.ly/44dyiV9)
+
+## This is the first project I am building while learning ReactJS
+<br/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
