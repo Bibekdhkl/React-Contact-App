@@ -19,9 +19,7 @@ const ContactCard = (props) => {
     >
       <img className="ui avatar image" src={user} alt="userImage" />
       <div className="content">
-        <div className="header" style={{ fontSize: "18px" }}>
-          {firstname}
-        </div>
+        <div className="header">{firstname}</div>
         <div className="email">{email}</div>
       </div>
       <i
@@ -32,6 +30,7 @@ const ContactCard = (props) => {
           fontSize: "20px",
           marginTop: "10px",
         }}
+        onClick={() => props.clickHandler(id)}
       ></i>
     </div>
   );

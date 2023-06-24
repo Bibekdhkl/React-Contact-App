@@ -2,12 +2,12 @@ import React from "react";
 class AddContact extends React.Component {
   //using states in class component
   state = {
-    name: "",
+    firstname: "",
     email: "",
   };
   add = (e) => {
     e.preventDefault();
-    if (this.state.name === "" && this.state.email === "") {
+    if (this.state.firstname === "" || this.state.email === "") {
       alert("All the fields must be filled");
       return;
     }
@@ -19,7 +19,7 @@ class AddContact extends React.Component {
     //here the props are passed as function
 
     //but after sumbission the fields are not cleared so we use
-    this.setState({ name: "", email: "" });
+    this.setState({ firstname: "", email: "" });
   };
   render() {
     return (
@@ -31,11 +31,11 @@ class AddContact extends React.Component {
             <label>Name</label>
             <input
               type="text"
-              name="name"
+              name="firstname"
               placeholder="Name"
               //the states are used here
-              value={this.state.name}
-              onChange={(e) => this.setState({ name: e.target.value })}
+              value={this.state.firstname}
+              onChange={(e) => this.setState({ firstname: e.target.value })}
             />
           </div>
           <div className="field">
